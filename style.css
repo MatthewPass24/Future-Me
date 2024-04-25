@@ -4,8 +4,8 @@ body {
 }
 h1.display-5 {
     color: rgb(44, 44, 44);
-    font-weight: 900;
-    font-size: 5em;
+    font-weight: 750;
+    font-size: 4em;
 }
 li {
     color: rgb(44, 44, 44);
@@ -26,4 +26,17 @@ li {
     background-color: #d5e3e6be;
     background-attachment: fixed;
   }
-  
+  .stats {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0.5em;
+  }
+  .progress {
+    margin: 2em;
+  }
+  .navbar {
+    transition: all 0.5s;
+  }
+  .navbar-scrolled {
+    background-color: black;
+  }
