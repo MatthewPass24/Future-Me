@@ -30,7 +30,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="overview.html">Overview</a>
+                            <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="salary.html">Salary</a>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="d-lg-none navbar navbar-dark bg-dark fixed-top">
+        <nav class="d-lg-none navbar bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Future Me</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Overview</a>
+                      <a class="nav-link" href="#overview">Overview</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Salary</a>
@@ -78,26 +78,53 @@
           </nav>
         <div class="banner w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="content text-center">
-                <h1 class="display-5">Software Developer</h1>
+                <h1 class="display-5">Software Engineer</h1>
             </div>
         </div>
     </header>
     <main>
-        <div class="section-title">
-            <h1>Overview</h1>
+        <div class="section-title" id="overview">
+            <h>Overview</h1>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-6 col-sm-12 col-12">
-        <div class="card" style="width: 18rem;">            
-          <h5 class="card-title">Levels of education</h5>
-          <img src="images/education.png" class="card-img-top h-100" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+<div class="row g-4">
+  <div class="col-sm-12 col-lg-7">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="images/software.jpeg" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/software.jpeg" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/software.jpeg" class="d-block w-100" alt="...">
         </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4">
+    <div class="job-description">
+      <h3>Description</h3>
+      <p>Read to find out a little bit about what being a software engineer entails.</p>
+      <ul>
+        <li>Software engineers are the creative minds behind computer programs</li>
+        <li>They must identify  the core functionality that users need from software programs</li>
+        <li>They design the program and then give instructions to programmers, who test the code</li>
+        <li>Software engineers must have a strong background in comuter programming and must keep up to date on new computer languages</li>
+        <li>Software engineers must also have skills related to the industry that they work and knowledge of the institution's needs.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 <div class="row g-4 justify-content-center">
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card h-100">        
