@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: #f3f5fa;
     
 }
 h1.display-5 {
@@ -7,9 +8,7 @@ h1.display-5 {
     font-weight: 750;
     font-size: 4em;
 }
-li {
-    color: rgb(44, 44, 44);
-}
+
 
 .banner{
     background: url("images/software.jpeg");
@@ -64,4 +63,63 @@ li {
 .job-description {
   text-align: left;
   margin-left: 2em;
+}
+.colleges {
+  text-align: center;
+  margin: 3em;
+}
+.image {
+  position: relative;
+  
+}
+.image__img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 7px;
+}
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.image__overlay:hover {
+  opacity: 1;
+}
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  text-align: left;
+  color: #ffffff;
+}
+ul.dropdown-menu {
+  background-color: rgba(201, 201, 201, 0.233);
 }
