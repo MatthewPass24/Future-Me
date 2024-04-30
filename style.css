@@ -9,7 +9,10 @@ h1.display-5 {
     font-size: 4em;
 }
 
-
+h2.display-5 {
+  font-weight: 600;
+  font-size: 2.5em;
+}
 .banner{
     background: url("images/software.jpeg");
     height: 100vh;
@@ -51,6 +54,8 @@ h1.display-5 {
 }
 .card {
   margin: 2em;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 .section-title {
   padding: 1em;
@@ -122,4 +127,74 @@ h1.display-5 {
 }
 ul.dropdown-menu {
   background-color: rgba(201, 201, 201, 0.233);
+}
+.accordion{
+  margin-top: 2em;
+  text-align: left;
+}
+
+.accordion li{
+  list-style: none;
+  margin-bottom: 2em;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .content{
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+  content: '-';
+}
+.bg-hero-image {
+  background-image: url("images/money.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+  background-color: #d4d4d4be;
+  
+} 
+#money {
+  background: #fff;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+ul.m-3{
+  text-align: left;
 }
