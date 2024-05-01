@@ -7,11 +7,13 @@ h1.display-5 {
     color: rgb(44, 44, 44);
     font-weight: 750;
     font-size: 4em;
+    font-family: "Jost", sans-serif;
 }
 
 h2.display-5 {
   font-weight: 600;
   font-size: 2.5em;
+  font-family: "Jost", sans-serif;
 }
 .banner{
     background: url("images/software.jpeg");
@@ -40,7 +42,11 @@ h2.display-5 {
     transition: all 0.5s;
   }
   .navbar-scrolled {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  }
+  .offcanvas {
+    background-color: rgba(100, 113, 119, 0.959);
   }
 .card-img-top {
   background-size:5em;
@@ -118,6 +124,7 @@ h2.display-5 {
 .image__title {
   font-size: 2em;
   font-weight: bold;
+  margin-top: 0.25em;
 }
 .image__description {
   font-size: 1.25em;
@@ -131,14 +138,16 @@ ul.dropdown-menu {
 .accordion{
   margin-top: 2em;
   text-align: left;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
-.accordion li{
+.accordion-item{
   list-style: none;
   margin-bottom: 2em;
   padding: 10px;
   border-radius: 8px;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
   -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 
@@ -197,4 +206,41 @@ input[type="radio"]{
 }
 ul.m-3{
   text-align: left;
+}
+.main{
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.content{
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+p{
+  padding-top: 0.75em;
+  padding-bottom: 0em;
+  text-align: left;
+}
+.skills{
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 5px;
+}
+.html{
+  width: 62%;
+  background-color: #4282a7;
+}
+.css {
+  width: 23%;
+  background-color: #4282a7;
+}
+.js{
+  width: 8%;
+  background-color: #4282a7;
+}
+.php{
+  width: 5%;
+  background-color: #4282a7;
 }

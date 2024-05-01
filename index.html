@@ -11,12 +11,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
+
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:wght@100&family=Lilita+One&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-scrolled">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Future Me</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -48,41 +55,41 @@
         </div>
       </div>
     </nav>
-    <nav class="d-lg-none navbar bg-dark fixed-top">
+    <nav class="d-lg-none navbar fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Future Me</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <h5 class="offcanvas-title text-light" id="offcanvasDarkNavbarLabel">Future Me</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#overview">Overview</a>
+                <a class="nav-link text-light" href="#overview">Overview</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#salary">Salary</a>
+                <a class="nav-link text-light" href="#salary">Salary</a>
               </li>
               <hr class="dropdown-divider">
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Education
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Requirements</a></li>
-                  <li><a class="dropdown-item" href="#">Colleges</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Requirements</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Colleges</a></li>
                 </ul>
               </li>
             </ul>
@@ -93,12 +100,13 @@
       </div>
     </nav>
     <div class="banner w-100 vh-100 d-flex justify-content-center align-items-center">
-      <div class="content text-center">
+      <div class="content1 text-center">
         <h1 class="display-5">Software Engineer</h1>
       </div>
     </div>
   </header>
   <main>
+    <!--Description of the job-->
     <div class="section-title" id="overview">
       <h1>Overview</h1>
     </div>
@@ -131,7 +139,7 @@
       </div>
       <div class="col-sm-12 col-lg-4">
         <div class="job-description">
-          <h3>Description</h3>
+          <h4>Description</h4>
           <p>Read to find out a little bit about what being a software engineer entails.</p>
           <ul>
             <li>Software engineers are the creative minds behind computer programs</li>
@@ -141,77 +149,114 @@
               computer languages</li>
             <li>Software engineers must also have skills related to the industry that they work and knowledge of the
               institution's needs.</li>
+
           </ul>
         </div>
       </div>
     </div>
     <div class="container mt-5 mb-5" id="text">
-      <!--Header Section-->
-      <!--Early Life-->
+
+      <!--Earning section-->
       <div class="row m-3 box">
-          <div class="col-12 col-lg-4 p-5  text-center bg-hero-image rounded-start-2 overflow-hidden">
-              <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-dark">
-                      <h2 class="display-5 mb-3">
-                          Salary
-                      </h2>
-                  </div>
-              </div>
+        <div class="col-12 col-lg-4 p-5  text-center bg-hero-image rounded-start-2 overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-dark">
+              <h2 class="display-5 mb-3">
+                Salary
+              </h2>
+            </div>
           </div>
-          <!--Early Life end-->
-          <!--Description-->
-          <div class="col-12 col-lg-8 my-lg-0 p-3 bg-none border border-light rounded-end-2 text-center" id="money">
-              <ul class="m-3">
-                <li>The average salary for a software engineer is $105,396 in the United States</li>
-                <li>However, they can earn up to an average of $167,821</li>
-                <li>Software engineers can get an average cash bonus of $5,000 and can receive benefits like a 401(k) plan</li>
-                <li>The job outlook is positive for software engineers, as the field is projected to grow 25% by 2032</li>
-  
-              </ul>
-          </div>
-          <!--Description end-->
+        </div>
+        <!---->
+        <!--Description-->
+        <div class="col-12 col-lg-8 my-lg-0 p-3 bg-none border border-light rounded-end-2 text-center" id="money">
+          <ul class="m-3">
+            <li>The average salary for a software engineer is $105,396 in the United States</li>
+            <li>However, they can earn up to an average of $167,821</li>
+            <li>Software engineers can get an average cash bonus of $5,000 and can receive benefits like a 401(k) plan
+            </li>
+            <li>The job outlook is positive for software engineers, as the field is projected to grow 25% by 2032</li>
+
+          </ul>
+          <a class="btn text-align-left" style="background-color: #d1d1d1"
+            href="https://www.indeed.com/career/software-engineer/salaries" role="button">Learn More</a>
+        </div>
+        <!--Description end-->
       </div>
-      </div>
+    </div>
     <div class="section-title" id="overview">
       <h1>Education</h1>
     </div>
     <div class="row g-4 justify-content-center">
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="card h-100">
-          <h3 class="card-title">Education Levels</h3>
-          <img src="images/skills.png" class="image" alt="">
-          <div class="card-body">
-            <p class="card-text">This lists the percentages of the education backgrounds for software engineers
-            </p>
-            <a class="btn" style="background-color: #d1d1d1" href="https://www.indeed.com/career/software-engineer/career-advice"
-              role="button">Learn More</a>
+        <div class="main">
+          <h4>Degree Levels</h4>
+          <p>Bachelor's degree: 62%</p>
+          <div class="content">
+            <div class="skills html"></div>
+          </div>
+          <p>Master's degree: 23%</p>
+          <div class="content">
+            <div class="skills css"></div>
+          </div>
+          <p>Associate's degree: 8%</p>
+          <div class="content">
+            <div class="skills js"></div>
+          </div>
+          <p>HS diploma or GED: 5%</p>
+          <div class="content">
+            <div class="skills php"></div>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center">
-        <ul class="accordion">
-          <li>
-            <input type="radio" name="accordion" id="first">
-            <label for="first">What degree is preferred?</label>
-            <div class="content">
-              <p>Most employers prefer or require software engineers to have at least a bachelor's degree in a relevant discipline</p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                What degree is preferred?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Most employers prefer or require software engineers to have at least a bachelor's degree in a
+                  relevant
+                  discipline</p>
+              </div>
             </div>
-          </li>
-          <li>
-            <input type="radio" name="accordion" id="second">
-            <label for="second">Are there other education routes?</label>
-            <div class="content">
-              <p>As an alternative, some can also develop their skills through college certificate programs, associate degrees, or pathways like a bootcamp</p>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Are there other education routes?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>As an alternative, some can also develop their skills through college certificate programs, associate
+
+              </div>
             </div>
-          </li>
-          <li>
-            <input type="radio" name="accordion" id="third">
-            <label for="third">Other Info</label>
-            <div class="content">
-              <p>Regardless of their education levels, software engineers could benefit from professional certification</p>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Other Info
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Regardless of their education levels, software engineers could benefit from professional
+                  certification
+                </p>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="container-fluid text-center p-4">
@@ -219,19 +264,6 @@
         <h1>Colleges</h1>
         <br>
         <div class="row g-4">
-          <div class="col-lg-4 col-sm-12 col-12">
-            <div class="image">
-              <img class="image__img" src="images/MIT-AAAS-Members_0.jpg">
-              <div class="image__overlay image__overlay--blur">
-                <div class="image__title">MIT</div>
-                <p class="image__description">
-                <ul>
-                  <li>I started working at Wegmans in May 2023 and worked over the summer</li>
-                </ul>
-                </p>
-              </div>
-            </div>
-          </div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="image">
               <img class="image__img" src="images/R (5).jpg">
@@ -239,7 +271,29 @@
                 <div class="image__title">Carnegie Mellon</div>
                 <p class="image__description">
                 <ul>
-                  <li>Over the summer, I read two books to prepare for my English class, AP Literature</li>
+                  <li>
+                    Carnegie Mellon is ranked #1 in software engineering, and the most popular major is computer science
+                  </li>
+                  <a class="btn" style="background-color: #d1d1d1"
+                    href="https://www.usnews.com/best-colleges/carnegie-mellon-university-3242" role="button">Learn
+                    More</a>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-12">
+            <div class="image">
+              <img class="image__img" src="images/MIT-AAAS-Members_0.jpg">
+              <div class="image__overlay image__overlay--blur">
+                <div class="image__title">MIT</div>
+                <p class="image__description">
+                <ul>
+                  <li>MIT is ranked first in computer science among the colleges and is in the top 5 for software
+                    engineering</li>
+                  <a class="btn" style="background-color: #d1d1d1"
+                    href="https://www.usnews.com/best-colleges/massachusetts-institute-of-technology-2178"
+                    role="button">Learn More</a>
                 </ul>
                 </p>
               </div>
@@ -252,8 +306,13 @@
                 <div class="image__title">Georgia Tech</div>
                 <p class="image__description">
                 <ul>
-                  <li>Over the summer, I read two books to prepare for my English class</li>
+                  <li>Georgia Tech is ranked #3 in software engineering and most students major in engineering and
+                    comptuer science</li>
+                  <a class="btn" style="background-color: #d1d1d1"
+                    href="https://www.usnews.com/best-colleges/georgia-institute-of-technology-1569" role="button">Learn
+                    More</a>
                 </ul>
+
                 </p>
               </div>
             </div>
