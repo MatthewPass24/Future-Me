@@ -128,7 +128,8 @@ h2.display-5 {
 }
 .image__description {
   font-size: 1.25em;
-  margin-top: 0.25em;
+  margin-top: 0em;
+  padding-top: 0em;
   text-align: left;
   color: #ffffff;
 }
